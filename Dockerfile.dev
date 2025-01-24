@@ -1,0 +1,21 @@
+# Dockerfile.dev
+
+# Use the latest Node.js version
+FROM node:20-alpine
+
+# Set the working directory inside the container
+WORKDIR /app
+
+# Install dependencies
+COPY package*.json ./
+RUN npm install
+
+# Copy the rest of the application code
+COPY . .
+
+# Expose port 5173 (Vite's default port) for the dev server and 24678 for HMR (Hot Module Replacement)
+EXPOSE ${PORT}
+EXPOSE ${HMR_PORT}
+
+# Command to start the development server with hot-reloading
+CMD ["npm", "run", "dev"]

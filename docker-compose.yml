@@ -1,0 +1,15 @@
+version: '3'
+services:
+  personal-portfolio-vue-dev:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    ports:
+      - "1174:1174"  # Map port 1174 to the container's port 1174
+    environment:
+      - PORT=1174  # Set PORT if not defined in .env file
+      - CHOKIDAR_USEPOLLING=true  # Ensure hot-reloading works inside Docker
+    volumes:
+      - .:/app  # Mount the current directory to the container
+      - /app/node_modules  # Avoid overwriting node_modules in the container
+    command: npm run dev  # Start Nuxt.js development server

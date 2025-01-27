@@ -15,16 +15,25 @@ export default {
       SocialShare: [
         {
           id: 1,
-          iconName: "fa fa-facebook",
-          link: "https://www.facebook.com/",
+          iconName: "fa fa-linkedin",
+          link: "https://www.linkedin.com/in/jomar-manalo-72abb11ba/",
         },
-        { id: 2, iconName: "fa fa-twitter", link: "https://twitter.com/" },
-        {
-          id: 3,
-          iconName: "fa fa-youtube",
-          link: "https://www.youtube.com/",
-        },
-        { id: 4, iconName: "fa fa-dribbble", link: "https://dribbble.com/" },
+        // {
+        //   id: 2,
+        //   iconName: "fa fa-facebook",
+        //   link: "https://www.facebook.com/",
+        // },
+        // { id: 3, iconName: "fa fa-twitter", link: "https://twitter.com/" },
+        // {
+        //   id: 4,
+        //   iconName: "fa fa-youtube",
+        //   link: "https://www.youtube.com/",
+        // },
+        // { 
+        //   id: 5, 
+        //   iconName: "fa fa-dribbble", 
+        //   link: "https://dribbble.com/" 
+        // },
       ],
     };
   },

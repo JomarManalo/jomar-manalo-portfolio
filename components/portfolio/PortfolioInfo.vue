@@ -135,17 +135,17 @@
                       <!-- {/* Main Project Logo Ends */} -->
 
                       <!-- {/*  Main Project Description Starts */} -->
-                      <div class="portforlio-desc open-sans-font pt-3 pb-5">
-                        <p>
+                      <div class="portforlio-desc open-sans-font pt-3 pb-3">
+                        <p v-if="portfolio.description1">
                           {{ portfolio.description1 }}
                         </p>
-                        <p>
+                        <p v-if="portfolio.description2">
                           {{ portfolio.description2 }}
                         </p>
-                        <p>
+                        <p v-if="portfolio.description3">
                           {{ portfolio.description3 }}
                         </p>
-                        <p>
+                        <p v-if="portfolio.description4">
                           {{ portfolio.description4 }}
                         </p>
                       </div>

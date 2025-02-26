@@ -7,7 +7,8 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "start": "node .output/server/index.mjs"
   },
   "dependencies": {
     "@emailjs/browser": "^4.1.0",
@@ -15,6 +16,7 @@
     "@popperjs/core": "^2.11.6",
     "autoprefixer": "10.4.5",
     "bootstrap": "^5.1.3",
+    "caniuse-lite": "^1.0.30001700",
     "nuxt": "^3.10.2",
     "sass": "^1.71.1",
     "vue": "^3.4.19",
@@ -22,5 +24,8 @@
   },
   "overrides": {
     "autoprefixer": "10.4.5"
+  },
+  "engines": {
+    "node": "20.x"
   }
 }

@@ -1,8 +1,13 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  head: {
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+    ]
+  },
   devtools: { enabled: true },
   modules: ["@nuxt/image"],
   server: {
-    port: process.env.PORT || 1174, // Use PORT from environment or fallback to 1174
+    port: process.env.PORT || 1174,
+    host: '0.0.0.0',  // Ensure Nuxt listens on all network interfaces
   },
 });

@@ -14,8 +14,8 @@ RUN npm install
 COPY . .
 
 # Expose port 5173 (Vite's default port) for the dev server and 24678 for HMR (Hot Module Replacement)
-EXPOSE ${PORT}
-EXPOSE ${HMR_PORT}
+EXPOSE 1174
+EXPOSE 44678
 
 # Command to start the development server with hot-reloading
 CMD ["npm", "run", "dev"]
